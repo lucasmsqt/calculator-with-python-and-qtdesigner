@@ -23,7 +23,7 @@ class Ui_Calculator(object):
         if not Calculator.objectName():
             Calculator.setObjectName(u"Calculator")
         Calculator.setEnabled(True)
-        Calculator.resize(331, 550)
+        Calculator.resize(335, 551)
         font = QFont()
         font.setFamilies([u"Noto Sans"])
         font.setPointSize(10)
@@ -239,10 +239,10 @@ class Ui_Calculator(object):
 "background: #6F6F6F\n"
 "}\n"
 "")
-        self.btnPtg = QPushButton(self.centralwidget)
-        self.btnPtg.setObjectName(u"btnPtg")
-        self.btnPtg.setGeometry(QRect(170, 470, 75, 71))
-        self.btnPtg.setStyleSheet(u"QPushButton {background: #131313;\n"
+        self.btnPercent = QPushButton(self.centralwidget)
+        self.btnPercent.setObjectName(u"btnPercent")
+        self.btnPercent.setGeometry(QRect(170, 470, 75, 71))
+        self.btnPercent.setStyleSheet(u"QPushButton {background: #131313;\n"
 "border: 0;\n"
 "color: white;\n"
 "font-size: 20px;\n"
@@ -296,7 +296,7 @@ class Ui_Calculator(object):
 "}")
         self.lineEdit = QLineEdit(self.centralwidget)
         self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(0, 0, 321, 141))
+        self.lineEdit.setGeometry(QRect(10, 0, 311, 141))
         self.lineEdit.setLayoutDirection(Qt.RightToLeft)
         self.lineEdit.setStyleSheet(u"color: white;\n"
 "font-size: 50px")
@@ -325,7 +325,7 @@ class Ui_Calculator(object):
         self.btn1.setText(QCoreApplication.translate("Calculator", u"1", None))
         self.btn2.setText(QCoreApplication.translate("Calculator", u"2", None))
         self.btn3.setText(QCoreApplication.translate("Calculator", u"3", None))
-        self.btnPtg.setText(QCoreApplication.translate("Calculator", u"%", None))
+        self.btnPercent.setText(QCoreApplication.translate("Calculator", u"%", None))
         self.btn0.setText(QCoreApplication.translate("Calculator", u"0", None))
         self.btnComma.setText(QCoreApplication.translate("Calculator", u",", None))
         self.btnEqual.setText(QCoreApplication.translate("Calculator", u"=", None))

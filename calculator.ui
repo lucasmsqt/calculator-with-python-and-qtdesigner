@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>331</width>
-    <height>550</height>
+    <width>335</width>
+    <height>551</height>
    </rect>
   </property>
   <property name="font">
@@ -442,7 +442,7 @@ background: #6F6F6F
      <string>3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnPtg">
+   <widget class="QPushButton" name="btnPercent">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -554,9 +554,9 @@ background: #6AB56A
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>0</y>
-      <width>321</width>
+      <width>311</width>
       <height>141</height>
      </rect>
     </property>

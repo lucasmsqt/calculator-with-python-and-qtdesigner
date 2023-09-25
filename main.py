@@ -29,6 +29,8 @@ class CalculatorApp(QMainWindow, Ui_Calculator):
         self.btn7.clicked.connect(lambda checked: self.add_number(7))
         self.btn8.clicked.connect(lambda checked: self.add_number(8))
         self.btn9.clicked.connect(lambda checked: self.add_number(9))
+        self.btnComma.clicked.connect(self.add_comma)
+        self.btnPercent.clicked.connect(self.add_percent)
         self.btnEqual.clicked.connect(self.calculate_result)
         self.btnClear.clicked.connect(self.clear)
 
@@ -56,6 +58,18 @@ class CalculatorApp(QMainWindow, Ui_Calculator):
         self.current_value = ""
         self.current_operation = None
         self.lineEdit.setText("")
+    
+    def add_comma(self):
+        self.current_value += "."
+        self.lineEdit.setText(self.current_value)
+
+    def add_percent(self):
+        try:
+            current_float = float(self.current_value)
+            self.current_value = str(current_float / 100)
+            self.lineEdit.setText(self.current_value)
+        except ValueError:
+            self.lineEdit.setText("Error")   
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
